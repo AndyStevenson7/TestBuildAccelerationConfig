@@ -10,7 +10,15 @@ when needed. The result is that edits on a settings file don't get picked up, un
 (Ctrl+B or Ctrl+Shift+B) before running debug.
 
 ### Testing
-1. Run the project: the config values in appsettings.json should be output to the console window
+1. Open the project in VS 2022, v17.5.X
+2. Go to Tools > Options > Projects and Solutions > SDK-Style Projects: tick _Don't call MSBuild if a project appears to be up to date._
+2. Run the project. The config values in appsettings.json should be output to the console window
 2. Change the `Build Action` property of the appsettings.json file to something like `None`, `Content`, `Resource` or `Embedded Resource`
 3. Build and run the application
 4. Edit a config setting and run in debug `F5` (_don't_ force a rebuild). Check if the config change is picked up and displayed to the console.
+
+### Findings
+- `Build Action: None` - changes not picked up
+- `Build Action: Content` - changes not picked up
+- `Build Action: Resource` - throws a runtime error
+- `Build Action: Embedded Resource` - changes **are** picked up
