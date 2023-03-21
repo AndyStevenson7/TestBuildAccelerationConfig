@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBuildAccelerationConfig", "TestBuildAccelerationConfig\TestBuildAccelerationConfig.csproj", "{27CB8D3C-51A8-4C17-B17C-9000DB9DEA3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_BuildAcceleration_ConfigChange", "Test_BuildAcceleration_ConfigChange\Test_BuildAcceleration_ConfigChange.csproj", "{27CB8D3C-51A8-4C17-B17C-9000DB9DEA3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
